@@ -12,7 +12,7 @@ public class UserService {
         userToSave.setName(userDto.getName());
         userToSave.setLastName(userDto.getLastName());
 
-        userRepository.save(userToSave);
+        userToSave = userRepository.save(userToSave);
         return entityToDto(userToSave);
     }
 
