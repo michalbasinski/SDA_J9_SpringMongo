@@ -1,8 +1,12 @@
 package pl.mb.mongo;
 
-import lombok.Value;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Value
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserDto {
     String id;
     String name;
